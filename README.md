@@ -1,6 +1,5 @@
 # Twi Grapheme Fixer (Twi G2G)
 
-[![PyPI version](https://img.shields.io/badge/pypi-v0.1.0-blue.svg)](https://pypi.org/project/twi-grapheme-fixer/)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-green.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![GhanaOpenAI](https://img.shields.io/badge/Org-GhanaOpenAI-black.svg)](https://github.com/GhanaOpenAI)
@@ -56,13 +55,9 @@ In real-world Ghanaian text and ASR corpora, **code-switching with English is ub
 ## 📦 Installation
 
 ```bash
-pip install twi-grapheme-fixer
-```
-
-Or install directly from GitHub:
-
-```bash
-pip install git+https://github.com/GhanaOpenAI/twi-grapheme-fixer.git
+git clone https://github.com/GhanaOpenAI/twi-grapheme-fixer.git
+cd twi-grapheme-fixer
+pip install .
 ```
 
 ---
