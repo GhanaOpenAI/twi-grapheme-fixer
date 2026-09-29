@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=64.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "twi-grapheme-fixer"
+version = "0.1.0"
+description = "Fix Twi (Akan) graphemes using ATR vowel harmony rules with English word exemption for ASR & TTS"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+authors = [
+    { name = "GhanaOpenAI", email = "info@ghanaopenai.org" },
+    { name = "Mich-Seth Owusu" }
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Linguistic",
+]
+keywords = [
+    "twi", "akan", "asante", "asr", "tts", "grapheme", "atr",
+    "vowel-harmony", "nlp", "speech-recognition", "ghana"
+]
+dependencies = []
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/GhanaOpenAI/twi-grapheme-fixer"
+Repository = "https://github.com/GhanaOpenAI/twi-grapheme-fixer.git"
+Issues = "https://github.com/GhanaOpenAI/twi-grapheme-fixer/issues"
+
+[project.scripts]
+twi-fixer = "twi_grapheme_fixer.cli:main"
+twi-grapheme-fixer = "twi_grapheme_fixer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+twi_grapheme_fixer = ["data/*.txt.gz"]
